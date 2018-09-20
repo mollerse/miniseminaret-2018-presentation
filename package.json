@@ -1,0 +1,42 @@
+{
+  "name": "miniseminaret-2018-presentation",
+  "version": "1.0.0",
+  "description": "Presentation about creative coding for miniseminaret 2018",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo presentation.js -s index.js --live --open -- -t [ babelify --presets [ env react ] ] -t brfs",
+    "build": "browserify presentation.js -o index.js -t [ babelify --presets [ env react ] ] -t brfs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollerse/miniseminaret-2018-presentation.git"
+  },
+  "keywords": [
+    "presentation"
+  ],
+  "author": "Stian Møllersen <stian.moellersen@gmail.com>",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/mollerse/miniseminaret-2018-presentation/issues"
+  },
+  "homepage": "https://github.com/mollerse/miniseminaret-2018-presentation#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "brfs": "^2.0.1",
+    "browserify": "^16.2.2",
+    "budo": "^11.3.2"
+  },
+  "dependencies": {
+    "dat.gui": "^0.7.2",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "spectacle": "^4.2.3",
+    "three": "^0.96.0",
+    "three-orbit-controls": "^82.1.0",
+    "web-audio-analyser": "^2.0.1",
+    "web-midi": "^2.1.0"
+  }
+}

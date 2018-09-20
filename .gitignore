@@ -1,0 +1,5 @@
+node_modules
+.DS_STORE
+
+# ignore mp3 file due to license
+*.mp3
